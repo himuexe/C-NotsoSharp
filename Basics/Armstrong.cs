@@ -7,7 +7,7 @@ class Armstrong
         int number = int.Parse(Console.ReadLine());
         int originalNumber = number;
         int sum = 0;
-        int digits = number.ToString().Length;
+        int digits = (int)Math.Log10(number) + 1;
         while (number != 0)
         {
             int digit = number % 10;

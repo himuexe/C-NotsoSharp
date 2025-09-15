@@ -1,24 +1,16 @@
-using System;
-class StringCompression
-{
-    public static string CompressionString(string str)
-    {
-        if (string.IsNullOrEmpty(str))
-            return str;
-        string result = "";
-        for (int i = 0; i < str.Length; i++)
-        {
-            int count = 1;
-            while (i < str.Length - 1 && str[i] == str[i + 1])
-            {
-                count++;
+public class Solution {
+    public string CompressedString(string word) {
+        StringBuilder newStr = new StringBuilder();
+        for(int i=0;i<word.Length;i++){
+            int count =1;
+            while(i<word.Length-1 && word[i]==word[i+1]){
                 i++;
+                count++;
+                if(count >= 9) break;
             }
-            result += str[i];
-            if (count > 1)
-                result += count.ToString();
+            newStr.Append(count.ToString());
+            newStr.Append(word[i]);
         }
-
-        return result;
+        return newStr.ToString();
     }
 }
