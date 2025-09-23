@@ -1,4 +1,6 @@
-using System;
+// Concepts --> GCD, LCM
+// C# Program to find the Least Common Multiple (LCM) of two numbers using GCD
+// Time Complexity: O(log(min(a, b))) where a and b are the two input numbers
 class LCM
 {
     static void Main(string[] args)

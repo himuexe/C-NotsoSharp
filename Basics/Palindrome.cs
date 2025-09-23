@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Loops, Math
+// C# Program to check if a number is a palindrome
+// Time Complexity: O(d) where d is the number of digits in the number
 class Palindrome
 {
     static void Main(string[] args)

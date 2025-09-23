@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Recursion
+// C# Program to find the Greatest Common Divisor (GCD) of two numbers using recursion
+// Time Complexity: O(log(min(a, b))) where a and b are the two input numbers
 class GCD
 {
     static void Main(string[] args)
@@ -11,7 +13,7 @@ class GCD
 
     static int FindGCD(int a, int b)
     {
-        if(a==0)
+        if (a == 0)
         {
             return b;
         }

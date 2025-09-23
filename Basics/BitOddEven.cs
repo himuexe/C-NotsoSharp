@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Bitwise Operations
+// C# Program to determine if a number is odd or even using bitwise operations
+// Time Complexity: O(1)
 class BitOddEven
 {
     static void Main()

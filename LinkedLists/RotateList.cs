@@ -1,3 +1,6 @@
+// C# program to rotate a linked list to the right by k places
+// LeetCode Problem: https://leetcode.com/problems/rotate-list/
+// Time Complexity: O(N)
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -9,23 +12,29 @@
  *     }
  * }
  */
-public class Solution {
-    public ListNode RotateRight(ListNode head, int k) {
-        if (head == null || head.next == null || k == 0) {
+public class Solution
+{
+    public ListNode RotateRight(ListNode head, int k)
+    {
+        if (head == null || head.next == null || k == 0)
+        {
             return head;
         }
         ListNode tail = head;
         int length = 1;
-        while (tail.next != null) {
+        while (tail.next != null)
+        {
             tail = tail.next;
             length++;
         }
         k = k % length;
-        if (k == 0) {
+        if (k == 0)
+        {
             return head;
         }
         ListNode newTail = head;
-        for (int i = 0; i < length - k - 1; i++) {
+        for (int i = 0; i < length - k - 1; i++)
+        {
             newTail = newTail.next;
         }
         ListNode newHead = newTail.next;

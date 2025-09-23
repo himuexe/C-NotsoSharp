@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Loops, Math
+// C# Program to reverse a number
+// Time Complexity: O(d) where d is the number of digits in the number
 class ReverseNumber
 {
     static void Main(string[] args)

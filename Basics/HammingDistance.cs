@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Bit Manipulation, Loops
+// C# Program to calculate the Hamming Distance between two integers
+// Time Complexity: O(b) where b is the number of bits in the integers
 class HammingDistance
 {
     static void Main(string[] args)

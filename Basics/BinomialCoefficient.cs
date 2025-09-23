@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Factorials, Loops
+// C# Program to calculate the Binomial Coefficient C(n, r)
+// Time Complexity: O(n) due to the factorial calculations
 class BinomialCoefficient
 {
     static int Factorial(int n)

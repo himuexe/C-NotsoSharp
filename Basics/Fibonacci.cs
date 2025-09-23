@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Loops
+// C# Program to print the Fibonacci sequence up to n terms
+// Time Complexity: O(n)
 class Fibonacci
 {
     static void Main(string[] args)

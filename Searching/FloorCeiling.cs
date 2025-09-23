@@ -1,19 +1,29 @@
-static int Ceiling(int[] arr, int target) {
+// C# Ceiling and Floor implementation in C#
+// Leetcode Link: https://leetcode.com/problems/ceiling-of-a-number/
+// Time Complexity: O(log n)
+static int Ceiling(int[] arr, int target)
+{
     int left = 0;
     int right = arr.Length - 1;
-    
-    while (left <= right) {
+
+    while (left <= right)
+    {
         int mid = left + (right - left) / 2;
-        
-        if (arr[mid] > target) {
+
+        if (arr[mid] > target)
+        {
             right = mid - 1;
-        } else if (arr[mid] < target) {
+        }
+        else if (arr[mid] < target)
+        {
             left = mid + 1;
-        } else {
-            return mid;  
+        }
+        else
+        {
+            return mid;
         }
     }
-    
+
     return left < arr.Length ? left : -1;
 }
 

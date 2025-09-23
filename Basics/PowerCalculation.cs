@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Loops, Math
+// C# Program to calculate the power of a number using exponentiation by squaring method 
+// Time Complexity: O(log e) where e is the exponent
 class PowerCalculation
 {
     static void Main()

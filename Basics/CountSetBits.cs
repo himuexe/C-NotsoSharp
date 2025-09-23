@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Bit Manipulation, Loops
+// C# Program to count the number of set bits (1s) in the binary representation
+// Time Complexity: O(b) where b is the number of bits in the integer
 class CountSetBits
 {
     static void Main()

@@ -1,3 +1,5 @@
+// Calculate the shortest path to the origin after following a series of directions in a string
+
 static int CalcPath(string str)
 {
     int x = 0, y = 0;

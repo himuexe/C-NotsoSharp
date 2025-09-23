@@ -1,4 +1,6 @@
-using System;
+// C# Linear Search implementation in C#
+ // Time Complexity: O(n)
+ 
 class LinearSearch
 {
     int Search(int[] arr, int x)

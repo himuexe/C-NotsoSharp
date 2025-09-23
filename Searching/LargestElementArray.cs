@@ -1,4 +1,5 @@
-using System;
+// C# Largest Element in an Array implementation in C#
+ // Time Complexity: O(n)
 class LargestElementArray
 {
     static void Main()

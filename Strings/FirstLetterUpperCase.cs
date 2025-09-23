@@ -1,5 +1,6 @@
-using System;
-using System.Text;
+// Convert the first letter of each word in a string to uppercase
+// Leetcode Link: https://leetcode.com/problems/capitalize-the-title/
+// Time Complexity: O(n) where n is the length of the string
 
 class FirstLetterUpperCase
 {
@@ -7,7 +8,7 @@ class FirstLetterUpperCase
     {
         if (string.IsNullOrEmpty(str))
             return str;
-            
+
         StringBuilder result = new StringBuilder();
         bool capitalizeNext = true;
 

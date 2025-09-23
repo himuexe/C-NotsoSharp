@@ -1,3 +1,6 @@
+// C# program to reverse nodes in k-group in a linked list
+// LeetCode Problem: https://leetcode.com/problems/reverse-nodes-in-k-group/
+// Time Complexity: O(N)
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -9,15 +12,18 @@
  *     }
  * }
  */
-public class Solution {
-    public ListNode ReverseList(ListNode head) {
+public class Solution
+{
+    public ListNode ReverseList(ListNode head)
+    {
         ListNode prev = null;
         ListNode current = head;
-        while(current != null){
+        while (current != null)
+        {
             ListNode next = current.next;
-            current.next=prev;
-            prev=current;
-            current=next;
+            current.next = prev;
+            prev = current;
+            current = next;
         }
         return prev;
     }

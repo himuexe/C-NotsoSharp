@@ -1,3 +1,6 @@
+// C# program to reverse a Doubly Linked List
+// GeeksforGeeks Problem: https://practice.geeksforgeeks.org/problems/reverse
+// Time Complexity: O(N)
 /*
 public class Node {
     public int data;
@@ -11,8 +14,10 @@ public class Node {
     }
 }
 */
-public class Solution {
-    public Node reverse(Node head) {
+public class Solution
+{
+    public Node reverse(Node head)
+    {
         // code here
         if (head == null || head.next == null)
             return head;

@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Loops, Math
+// C# Program to check if a number is prime
+// Time Complexity: O(√n)
 class PrimeNumbers
 {
     static void Main(string[] args)

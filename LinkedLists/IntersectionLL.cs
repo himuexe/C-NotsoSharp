@@ -1,3 +1,7 @@
+// Concept: Linked List, Two Pointers
+// C# Implementation to find the intersection node of two singly linked lists
+// Leetcode Link: https://leetcode.com/problems/intersection-of-two-linked-lists/
+// Time Complexity: O(N + M) where N and M are the lengths of the two
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -6,25 +10,32 @@
  *     public ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public ListNode GetIntersectionNode(ListNode headA, ListNode headB) {
-        if (headA == null || headB == null) {
+public class Solution
+{
+    public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
+    {
+        if (headA == null || headB == null)
+        {
             return null;
         }
         ListNode endA = headA;
-        while (endA.next != null) {
+        while (endA.next != null)
+        {
             endA = endA.next;
         }
         endA.next = headB;
         ListNode start = null;
         ListNode slow = headA;
         ListNode fast = headA;
-        while (fast != null && fast.next != null) {
+        while (fast != null && fast.next != null)
+        {
             slow = slow.next;
             fast = fast.next.next;
-            if (slow == fast) {
+            if (slow == fast)
+            {
                 slow = headA;
-                while (slow != fast) {
+                while (slow != fast)
+                {
                     slow = slow.next;
                     fast = fast.next;
                 }

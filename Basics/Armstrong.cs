@@ -1,4 +1,6 @@
-using System;
+// Concepts --> Math, Loops
+// C# Program to check if a number is an Armstrong number
+// Time Complexity: O(d) where d is the number of digits in the number
 class Armstrong
 {
     static void Main(string[] args)
