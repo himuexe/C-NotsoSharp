@@ -17,9 +17,9 @@ public class Solution
     private ListNode FindMiddleNode(ListNode head)
     {
         ListNode slow = head;
-        ListNode fast = head.next;
+        ListNode fast = head;
 
-        while (fast != null && fast.next != null)
+        while (fast != null && fast.next != null && fast.next.next!=null)
         {
             slow = slow.next;
             fast = fast.next.next;

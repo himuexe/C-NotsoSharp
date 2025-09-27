@@ -1,19 +1,19 @@
-// Reverse a string in place
-// Leetcode Link: https://leetcode.com/problems/reverse-string/
-// Time Complexity: O(n) where n is the length of the string
+// Reverse a string 
 public class Solution
 {
-    public void ReverseString(char[] s)
+    public static string ReverseString(string s) 
     {
-        int left = 0;
-        int right = s.Length - 1;
-        while (left < right)
+        StringBuilder result = new StringBuilder();
+        for(int i = s.Length - 1; i >= 0; i--)
         {
-            char temp = s[right];
-            s[right] = s[left];
-            s[left] = temp;
-            left++;
-            right--;
+            result.Append(s[i]);
         }
+        return result.ToString();
+    }
+    
+    public static void Main(string[] args)
+    {
+        string s = "himanshu";
+        Console.WriteLine(ReverseString(s));
     }
 }
